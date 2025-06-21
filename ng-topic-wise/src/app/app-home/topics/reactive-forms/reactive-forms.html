@@ -1,0 +1,11 @@
+<form [formGroup]="userFormControl" (ngSubmit)="onSubmitFormControl()">
+    <label for="username">FormControl Username:</label>
+    <input type="text" formControlName="username">
+    <button type="submit">Submit</button>
+</form>
+
+<form [formGroup]="userFormBuilder" (ngSubmit)="onSubmitFormBuilder()">
+    <label for="username">FormBuilder Username:</label>
+    <input type="text" formControlName="formBuilderName">
+    <button type="submit">Submit</button>
+</form>
