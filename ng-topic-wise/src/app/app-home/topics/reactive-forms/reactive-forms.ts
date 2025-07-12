@@ -8,9 +8,9 @@ import { FormBuilder, FormControl, FormGroup , ReactiveFormsModule, Validators} 
   styleUrl: './reactive-forms.scss'
 })
 export class ReactiveForms {
-
-  userFormBuilder!: FormGroup;
+  //-------------------------------------------------
   //Reactive form with FormBuilder
+  userFormBuilder!: FormGroup;
   constructor(private fb: FormBuilder){
     this.userFormBuilder = this.fb.group({
       formBuilderName: ['', [Validators.required]]
@@ -20,7 +20,7 @@ export class ReactiveForms {
   onSubmitFormBuilder(){
     console.log("Form Data: " + this.userFormBuilder?.value.formBuilderName);
   }
-
+//----------------------------------------------------
 
   // Reactive form with FormGroup and FormControl
   userFormControl = new FormGroup({
